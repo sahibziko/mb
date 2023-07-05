@@ -38,7 +38,7 @@ async def ping_fallen(_, message: Message):
                     InlineKeyboardButton("❄ Dəstək ❄", url=config.SUPPORT_CHAT),
                     InlineKeyboardButton(
                         "✨ Mənbə ✨",
-                        url="https://github.com/RaviVeyi",
+                        url="https://t.me/DegGixM",
                     ),
                 ],
             ]
