@@ -34,7 +34,7 @@ pm_buttons = [
     ],
     [
         InlineKeyboardButton(
-            text="💡 Mənbə", url="https://github.com/RaviVeyi"
+            text="💡 Mənbə", url="https://t.me/DegGixM"
         ),
         InlineKeyboardButton(text=" İnkişaf etdirici ", user_id=config.OWNER_ID),
     ],
@@ -54,7 +54,7 @@ gp_buttons = [
     ],
     [
         InlineKeyboardButton(
-            text="💡 Mənbə", url="https://github.com/RaviVeyi"
+            text="💡 Mənbə", url="https://t.me/DegGixM"
         ),
         InlineKeyboardButton(text="☠ İnkişaf etdirici", user_id=config.OWNER_ID),
     ],
