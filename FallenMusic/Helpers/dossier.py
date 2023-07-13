@@ -1,25 +1,25 @@
 from FallenMusic import BOT_NAME
 
 PM_START_TEXT = """
-Salam {0}, 🥀
+ꜱᴀʟᴀᴍ {0}, 👋
 ๏ Bu** {1} !
 
 ──────────────────
-Mənim bəzi faydalı xüsusiyyətləri olan teleqram yayım botuyam. Youtube, Spotify, Resso, AppleMusic, Soundcloud və s. kimi platformaları istifadə edirəm.
+ ᴍƏɴ ʙƏᴢɪ ꜰᴀʏᴅᴀʟɪ xÜꜱᴜꜱɪʏʏƏᴛʟƏʀɪ ᴏʟᴀɴ ᴛᴇʟᴇQʀᴀᴍ ʏᴀʏɪᴍ ʙᴏᴛᴜʏᴀᴍ. ʏᴏᴜᴛᴜʙᴇ, ꜱᴘᴏᴛɪꜰʏ, ʀᴇꜱꜱᴏ, ᴀᴘᴘʟᴇᴍᴜꜱɪᴄ, ꜱᴏᴜɴᴅᴄʟᴏᴜᴅ ᴠƏ ꜱ. ᴋɪᴍɪ ᴘʟᴀᴛꜰᴏʀᴍᴀʟᴀʀɪ ɪꜱᴛɪꜰᴀᴅƏ ᴇᴅɪʀƏᴍ.
 
-➻ Məni qruplarınıza əlavə etməkdən çəkinməyin. 
+➻ ᴍƏɴɪ Qʀᴜᴘʟᴀʀɪɴɪᴢᴀ ƏʟᴀᴠƏ ᴇᴛᴍƏᴋᴅƏɴ ÇƏᴋɪɴᴍƏʏɪɴ
 """
 
 START_TEXT = """
-**Salam** {0}, 🥀
-  {1} İndi mahnı oxuya bilər {2}.
+**ꜱᴀʟᴀᴍ** {0}, 👋
+  {1} İɴᴅɪ ᴍᴀʜɴɪ ᴏxᴜʏᴀ ʙɪʟƏʀ {2}.
 
 ──────────────────
 ➻ Mənim haqqımda kömək etmək üçün və ya bir şey soruşmaq istəyirsinizsə, mənim [Dəstək Çatıma]({3}) qoşula bilərsiniz.
 """
 
 HELP_TEXT = f"""
-<u>❄ **İstifadəçilər üçün mövcud əmrlər {BOT_NAME} :**</u>
+<u>❄ **İꜱᴛɪꜰᴀᴅƏÇɪʟƏʀ ÜÇÜɴ ᴍÖᴠᴄᴜᴅ ƏᴍʀʟƏʀ {BOT_NAME} :**</u>
 
 •━━━━━━━━•••━━━━━━━━•
 ๏ /play : Video çatda tələb olunan treki yayımlayan ulduzlar.
@@ -35,7 +35,7 @@ HELP_TEXT = f"""
 """
 
 HELP_SUDO = f"""
-<u>✨ **Sudo əmrləri daxil olur {BOT_NAME} :**</u>
+<u>✨ **ꜱᴜᴅᴏ ƏᴍʀʟƏʀɪ ᴅᴀxɪʟ ᴏʟᴜʀ {BOT_NAME} :**</u>
 
 •━━━━━━━━•••━━━━━━━━•
 ๏ /activevc : Hazırda aktiv səsli söhbətlərin siyahısını göstərir.
@@ -50,7 +50,7 @@ HELP_SUDO = f"""
 """
 
 HELP_DEV = f"""
-<u>✨ **Sahib əmr verir {BOT_NAME} :**</u>
+<u>✨ **ꜱᴀʜɪʙ Əᴍʀ ᴠᴇʀɪʀ {BOT_NAME} :**</u>
 
 •━━━━━━━━•••━━━━━━━━•
 ๏ /config : Botun bütün konfiqurasiya dəyişənlərini əldə etmək üçün.
