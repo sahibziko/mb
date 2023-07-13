@@ -4,7 +4,7 @@ import config
 from FallenMusic import BOT_USERNAME
 
 close_key = InlineKeyboardMarkup(
-    [[InlineKeyboardButton(text="𝄞 Bağlayır 𝄞", callback_data="close")]]
+    [[InlineKeyboardButton(text="𝄞 ʙᴀğʟᴀʏıʀ 𝄞", callback_data="close")]]
 )
 
 
@@ -23,20 +23,20 @@ buttons = InlineKeyboardMarkup(
 pm_buttons = [
     [
         InlineKeyboardButton(
-            text="✙ Qrupa Əlavə Et ✙",
+            text="✙ Qʀᴜᴘᴀ ƏʟᴀᴠƏ ᴇᴛ ✙",
             url=f"https://t.me/{BOT_USERNAME}?startgroup=true",
         )
     ],
-    [InlineKeyboardButton(text="📚 Kömək və Əmrlər 📚", callback_data="fallen_help")],
+    [InlineKeyboardButton(text="⚙️ ᴋÖᴍƏᴋʟƏʀ ᴠƏ ƏᴍʀʟƏʀ ⚙️", callback_data="fallen_help")],
     [
-        InlineKeyboardButton(text="🗣 Kanal", url=config.SUPPORT_CHANNEL),
-        InlineKeyboardButton(text="🚀 Dəstək", url=config.SUPPORT_CHAT),
+        InlineKeyboardButton(text="🗣 ᴋᴀɴᴀʟ", url=config.SUPPORT_CHANNEL),
+        InlineKeyboardButton(text="🔧 ᴅƏꜱᴛƏᴋ", url=config.SUPPORT_CHAT),
     ],
     [
         InlineKeyboardButton(
-            text="💡 Mənbə", url="https://t.me/DegGixM"
+            text="💡 ᴍƏɴʙƏ", url="https://t.me/NezrinSupport"
         ),
-        InlineKeyboardButton(text=" İnkişaf etdirici ", user_id=config.OWNER_ID),
+        InlineKeyboardButton(text=" İɴᴋɪŞᴀꜰ ᴇᴛᴅɪʀɪᴄɪ ", user_id=config.OWNER_ID),
     ],
 ]
 
@@ -44,19 +44,19 @@ pm_buttons = [
 gp_buttons = [
     [
         InlineKeyboardButton(
-            text="✙ Qrupa Əlavə Et ✙",
+            text="✙ Qʀᴜᴘᴀ ƏʟᴀᴠƏ ᴇᴛ ✙",
             url=f"https://t.me/{BOT_USERNAME}?startgroup=true",
         )
     ],
     [
-        InlineKeyboardButton(text="🗣 Kanal", url=config.SUPPORT_CHANNEL),
-        InlineKeyboardButton(text="🚀 Dəstək", url=config.SUPPORT_CHAT),
+        InlineKeyboardButton(text="🗣 ᴋᴀɴᴀʟ", url=config.SUPPORT_CHANNEL),
+        InlineKeyboardButton(text="🔧 ᴅƏꜱᴛƏᴋ", url=config.SUPPORT_CHAT),
     ],
     [
         InlineKeyboardButton(
-            text="💡 Mənbə", url="https://t.me/DegGixM"
+            text="💡 ᴍƏɴʙƏ", url="https://t.me/NezrinSupport"
         ),
-        InlineKeyboardButton(text="☠ İnkişaf etdirici", user_id=config.OWNER_ID),
+        InlineKeyboardButton(text="☠ İɴᴋɪŞᴀꜰ ᴇᴛᴅɪʀɪᴄɪ", user_id=config.OWNER_ID),
     ],
 ]
 
@@ -64,23 +64,23 @@ gp_buttons = [
 helpmenu = [
     [
         InlineKeyboardButton(
-            text="👥 Hər kəs",
+            text="👥 ʜƏʀ ᴋƏꜱ",
             callback_data="fallen_cb help",
         )
     ],
     [
-        InlineKeyboardButton(text="📑 Sudo", callback_data="fallen_cb sudo"),
-        InlineKeyboardButton(text="🗃 Sahibi", callback_data="fallen_cb owner"),
+        InlineKeyboardButton(text="📑 ꜱᴜᴅᴏ", callback_data="fallen_cb sudo"),
+        InlineKeyboardButton(text="👨‍💻 ꜱᴀʜɪʙɪ", callback_data="fallen_cb owner"),
     ],
     [
-        InlineKeyboardButton(text="◅ Geri", callback_data="fallen_home"),
-        InlineKeyboardButton(text="✘ Bağlayır", callback_data="close"),
+        InlineKeyboardButton(text="◅ ɢᴇʀɪ", callback_data="fallen_home"),
+        InlineKeyboardButton(text="✘ ʙᴀğʟᴀʏıʀ", callback_data="close"),
     ],
 ]
 
 
 help_back = [
-    [InlineKeyboardButton(text="🚀 Dəstək", url=config.SUPPORT_CHAT)],
+    [InlineKeyboardButton(text="🔧 ᴅƏꜱᴛƏᴋ", url=config.SUPPORT_CHAT)],
     [
         InlineKeyboardButton(text="◅ Geri", callback_data="fallen_help"),
         InlineKeyboardButton(text="✘ Bağlayır", callback_data="close"),
