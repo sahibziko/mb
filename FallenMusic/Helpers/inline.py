@@ -27,16 +27,16 @@ pm_buttons = [
             url=f"https://t.me/{BOT_USERNAME}?startgroup=true",
         )
     ],
-    [InlineKeyboardButton(text="⚙️ ᴋÖᴍƏᴋʟƏʀ ᴠƏ ƏᴍʀʟƏʀ ⚙️", callback_data="fallen_help")],
+    [InlineKeyboardButton(text="📚 ᴋÖᴍƏᴋʟƏʀ ᴠƏ ƏᴍʀʟƏʀ 📚", callback_data="fallen_help")],
     [
-        InlineKeyboardButton(text="🗣 ᴋᴀɴᴀʟ", url=config.SUPPORT_CHANNEL),
-        InlineKeyboardButton(text="🔧 ᴅƏꜱᴛƏᴋ", url=config.SUPPORT_CHAT),
+        InlineKeyboardButton(text="📢 ᴋᴀɴᴀʟ", url=config.SUPPORT_CHANNEL),
+        InlineKeyboardButton(text="💻 ᴅƏꜱᴛƏᴋ", url=config.SUPPORT_CHAT),
     ],
     [
         InlineKeyboardButton(
             text="💡 ᴍƏɴʙƏ", url="https://t.me/NazSupport"
         ),
-        InlineKeyboardButton(text=" İɴᴋɪŞᴀꜰ ᴇᴛᴅɪʀɪᴄɪ ", user_id=config.OWNER_ID),
+        InlineKeyboardButton(text="🧑 ꜱᴀʜɪʙ ", user_id=config.OWNER_ID),
     ],
 ]
 
@@ -49,14 +49,14 @@ gp_buttons = [
         )
     ],
     [
-        InlineKeyboardButton(text="🗣 ᴋᴀɴᴀʟ", url=config.SUPPORT_CHANNEL),
-        InlineKeyboardButton(text="🔧 ᴅƏꜱᴛƏᴋ", url=config.SUPPORT_CHAT),
+        InlineKeyboardButton(text="📢 ᴋᴀɴᴀʟ", url=config.SUPPORT_CHANNEL),
+        InlineKeyboardButton(text="💻 ᴅƏꜱᴛƏᴋ", url=config.SUPPORT_CHAT),
     ],
     [
         InlineKeyboardButton(
             text="💡 ᴍƏɴʙƏ", url="https://t.me/NazSupport"
         ),
-        InlineKeyboardButton(text="☠ İɴᴋɪŞᴀꜰ ᴇᴛᴅɪʀɪᴄɪ", user_id=config.OWNER_ID),
+        InlineKeyboardButton(text="🧑 ꜱᴀʜɪʙ", user_id=config.OWNER_ID),
     ],
 ]
 
@@ -70,7 +70,7 @@ helpmenu = [
     ],
     [
         InlineKeyboardButton(text="📑 ꜱᴜᴅᴏ", callback_data="fallen_cb sudo"),
-        InlineKeyboardButton(text="👨‍💻 ꜱᴀʜɪʙɪ", callback_data="fallen_cb owner"),
+        InlineKeyboardButton(text="🧑 ꜱᴀʜɪʙɪ", callback_data="fallen_cb owner"),
     ],
     [
         InlineKeyboardButton(text="◅ ɢᴇʀɪ", callback_data="fallen_home"),
@@ -80,7 +80,7 @@ helpmenu = [
 
 
 help_back = [
-    [InlineKeyboardButton(text="🔧 ᴅƏꜱᴛƏᴋ", url=config.SUPPORT_CHAT)],
+    [InlineKeyboardButton(text="💻 ᴅƏꜱᴛƏᴋ", url=config.SUPPORT_CHAT)],
     [
         InlineKeyboardButton(text="◅ Geri", callback_data="fallen_help"),
         InlineKeyboardButton(text="✘ Bağlayır", callback_data="close"),
