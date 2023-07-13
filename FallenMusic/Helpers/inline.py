@@ -34,7 +34,7 @@ pm_buttons = [
     ],
     [
         InlineKeyboardButton(
-            text="💡 ᴍƏɴʙƏ", url="https://t.me/NezrinSupport"
+            text="💡 ᴍƏɴʙƏ", url="https://t.me/NazSupport"
         ),
         InlineKeyboardButton(text=" İɴᴋɪŞᴀꜰ ᴇᴛᴅɪʀɪᴄɪ ", user_id=config.OWNER_ID),
     ],
@@ -54,7 +54,7 @@ gp_buttons = [
     ],
     [
         InlineKeyboardButton(
-            text="💡 ᴍƏɴʙƏ", url="https://t.me/NezrinSupport"
+            text="💡 ᴍƏɴʙƏ", url="https://t.me/NazSupport"
         ),
         InlineKeyboardButton(text="☠ İɴᴋɪŞᴀꜰ ᴇᴛᴅɪʀɪᴄɪ", user_id=config.OWNER_ID),
     ],
