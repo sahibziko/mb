@@ -1,0 +1,77 @@
+{
+    "name": "Telegram Music ダ Tag Bot",
+    "description": "Pyrogram və Py-Tgcalls ilə Python dilində yazılmış teleqram videoçatları & tag üçün VC Player & Tag Botu.",
+    "logo": "https://graph.org/file/35444b7d40fff28719e62.jpg",
+    "keywords": [
+    "python3",
+    "telegram",
+    "Fallen",
+    "MusicBot",
+    "telegram-bot",
+    "pyrogram"
+    ],
+    "env": {
+      "API_ID": {
+        "description": "Bu dəyəri https://my.telegram.org saytından əldə edin",
+        "value": "",
+        "required": true
+      },
+      "API_HASH": {
+        "description": "Bu dəyəri https://my.telegram.org saytından əldə edin",
+        "value": "",
+        "required": true
+      },
+      "BOT_TOKEN": {
+        "description": "Botfather-dən Bot nişanı",
+        "value": "",
+        "required": true
+      },
+      "OWNER_ID": {
+        "description": "İstifadəçi ID-nizi burada doldurun. (tam ədəd olmalıdır)",
+        "value": "",
+        "required": true
+      },
+      "SESSION": {
+        "description": "@Telegram-dan piroqram v2 sim seansı",
+        "value": "",
+        "required": true
+      },
+        "PING_IMG": {
+        "description": "Ping seklin jpg formada daxil edin",
+        "value": "",
+        "required": true
+      },
+        "START_IMG": {
+        "description": "Start seklin jpg formada daxil edin",
+        "value": "",
+        "required": true
+      },
+        "SUPPORT_CHANNEL": {
+        "description": "Telegram dəstək kanalınızın linki. ",
+        "value": "",
+        "required": true
+      },
+      "SUDO_USERS": {
+        "description": "Sudo kimi əlavə etmək istədiyiniz istifadəçi(lər)in istifadəçi id(ləri). Çoxsaylı dəyərlər boşluqla ayrılmalıdır.",
+        "value": "",
+        "required": true
+      },
+      "SUPPORT_CHAT": {
+        "description": "Telegram dəstək qrupunuzun linki. (İctimaiyyətdə olmalıdır)",
+        "value": "",
+        "required": false
+      }
+    },
+    "buildpacks": [
+          {
+              "url": "heroku/python"
+          },
+          {
+              "url": "heroku/nodejs"
+          },
+          {
+              "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest.git"
+          }
+      ],
+      "stack": "container"
+  }
