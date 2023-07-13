@@ -122,7 +122,7 @@ async def play(_, message: Message):
     if audio:
         if round(audio.duration / 60) > DURATION_LIMIT:
             raise DurationLimitError(
-                f"» Bağışlayın balam, daha uzun izləyin  {DURATION_LIMIT} dəqiqə oynamağa icazə verilmir {BOT_NAME}."
+                f"» Bağışlayın , Musiqi limiti aşdı  {DURATION_LIMIT} dəqiqə oynamağa icazə verilmir {BOT_NAME}."
             )
 
         file_name = get_file_name(audio)
@@ -147,11 +147,11 @@ async def play(_, message: Message):
                 secmul *= 60
 
         except Exception as e:
-            return await fallen.edit_text(f"Nəsə xəta baş verdi\n\n**Xəta :** `{e}`")
+            return await fallen.edit_text(f" Xəta baş verdi\n\n**Xəta :** `{e}`")
 
         if (dur / 60) > DURATION_LIMIT:
             return await fallen.edit_text(
-                f"» Bağışlayın balam, daha uzun izləyin  {DURATION_LIMIT} dəqiqə oynamağa icazə verilmir {BOT_NAME}."
+                f"» Bağışlayın , musiqi limiti aşdı  {DURATION_LIMIT} dəqiqə oynamağa icazə verilmir {BOT_NAME}."
             )
         file_path = audio_dl(url)
     else:
@@ -177,7 +177,7 @@ async def play(_, message: Message):
 
         if (dur / 60) > DURATION_LIMIT:
             return await fallen.edit(
-                f"» Bağışlayın balam, daha uzun izləyin  {DURATION_LIMIT} dəqiqə oynamağa icazə verilmir {BOT_NAME}."
+                f"» Bağışlayın , Musiqi limiti aşdı  {DURATION_LIMIT} dəqiqə oynamağa icazə verilmir {BOT_NAME}."
             )
         file_path = audio_dl(url)
 
