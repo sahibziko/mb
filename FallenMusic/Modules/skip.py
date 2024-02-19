@@ -19,7 +19,7 @@ async def skip_str(_, message: Message):
             await _clear_(message.chat.id)
             await pytgcalls.leave_group_call(message.chat.id)
             await message.reply_text(
-                text=f"➻ Yayım atlandı 🥺\n│ \n└Mən : {message.from_user.mention} 🥀\n\n**» artıq növbəli trek yoxdur** {message.chat.title}, **Videoçatı tərk edir.**",
+                text=f"ℹ️ Növbətiyə keçdi\n│ \n└Tərəfindən : {message.from_user.mention} \n\n**» artıq növbəli trek yoxdur** {message.chat.title}, **Videoçatı tərk edir.**",
                 reply_markup=close_key,
             )
         except:
@@ -44,12 +44,12 @@ async def skip_str(_, message: Message):
             return await pytgcalls.leave_group_call(message.chat.id)
 
         await message.reply_text(
-            text=f"➻ Buxar atlandı 🥺\n│ \n└Mən : {message.from_user.mention} 🥀",
+            text=f"ℹ️ Növbətiyə keçdi 🥺\n│ \n└Tərəfindən : {message.from_user.mention} 🥀",
             reply_markup=close_key,
         )
         img = await gen_thumb(videoid, user_id)
         return await message.reply_photo(
             photo=img,
-            caption=f"**➻ Yayım başladı**\n\n‣ **Başlıq :** [{title[:27]}](https://t.me/{BOT_USERNAME}?start=info_{videoid})\n‣ **Müddət :** `{duration}` Dəqiqələr\n‣ **Tərəfindən tələb edilmişdir :** {req_by}",
+            caption=f"**ℹ️Musiqi başladı**\n\n▪️ **Başlıq :** [{title[:27]}](https://t.me/{BOT_USERNAME}?start=info_{videoid})\n▪️ **Müddət :** `{duration}` Dəqiqə\n▪️ **Tərəfindən seçildi :** {req_by}",
             reply_markup=buttons,
         )
