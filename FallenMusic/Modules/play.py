@@ -99,7 +99,7 @@ async def play(_, message: Message):
             await app2.join_chat(invitelink)
             await asyncio.sleep(2)
             await fallen.edit_text(
-                f"{ASS_NAME} Uğurla qoşuldu,\n\nYayım başlayır..."
+                f"{ASS_NAME} Uğurla qoşuldu,\n\nMusiqi başlayır..."
             )
         except UserAlreadyParticipant:
             pass
@@ -156,8 +156,8 @@ async def play(_, message: Message):
         file_path = audio_dl(url)
     else:
         if len(message.command) < 2:
-            return await fallen.edit_text("» Nə oynamaq istəyirsən balam ?")
-        await fallen.edit_text("🔎")
+            return await fallen.edit_text("» hansı, musiqini istəyirsən balam ?")
+        await fallen.edit_text("Axtarılır..🔎")
         query = message.text.split(None, 1)[1]
         try:
             results = YoutubeSearch(query, max_results=1).to_dict()
@@ -173,7 +173,7 @@ async def play(_, message: Message):
 
         except Exception as e:
             LOGGER.error(str(e))
-            return await fallen.edit("» Oueri emal etmək alınmadı, yenidən oynamağa cəhd edin...")
+            return await fallen.edit("» mahnını emal etmək alınmadı, yenidən oynatmağa cəhd edin...")
 
         if (dur / 60) > DURATION_LIMIT:
             return await fallen.edit(
@@ -199,7 +199,7 @@ async def play(_, message: Message):
         qimg = await gen_qthumb(videoid, message.from_user.id)
         await message.reply_photo(
             photo=qimg,
-            caption=f"**➻ Oueue-a əlavə edilib {position}**\n\n‣ **Başlıq :** [{title[:27]}](https://t.me/{BOT_USERNAME}?start=info_{videoid})\n‣ **Müddət :** `{duration}` Dəqiqələr\n‣ **Tərəfindən tələb edilmişdir :** {ruser}",
+            caption=f"**💠 Sıra-ya əlavə edildi {position}**\n\n▪️ **Başlıq :** [{title[:27]}](https://t.me/{BOT_USERNAME}?start=info_{videoid})\n▪️ **Müddət :** `{duration}` Dəqiqə\n‣ **Tərəfindən seçildi :** {ruser}",
             reply_markup=buttons,
         )
     else:
@@ -229,7 +229,7 @@ async def play(_, message: Message):
         await add_active_chat(message.chat.id)
         await message.reply_photo(
             photo=imgt,
-            caption=f"**➻ Yayım başladı**\n\n‣ **Başlıq :** [{title[:27]}](https://t.me/{BOT_USERNAME}?start=info_{videoid})\n‣ **Müddət :** `{duration}` Dəqiqələr\n‣ **Tərəfindən tələb edilmişdir :** {ruser}",
+            caption=f"**💠 Musiqi başladı**\n\n▪️ **Başlıq :** [{title[:27]}](https://t.me/{BOT_USERNAME}?start=info_{videoid})\n▪️ **Müddət :** `{duration}` Dəqiqə\n▪️ **Tərəfindən seçildi :** {ruser}",
             reply_markup=buttons,
         )
 
