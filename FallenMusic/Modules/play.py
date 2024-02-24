@@ -197,11 +197,7 @@ async def play(_, message: Message):
         )
         position = len(fallendb.get(message.chat.id))
         qimg = await gen_qthumb(videoid, message.from_user.id)
-        await message.reply_photo(
-            photo=qimg,
-            caption=f"**💠 Sıra-ya əlavə edildi {position}**\n\n▪️ **Başlıq :** [{title[:27]}](https://t.me/{BOT_USERNAME}?start=info_{videoid})\n▪️ **Müddət :** `{duration}` Dəqiqə\n‣ **Tərəfindən seçildi :** {ruser}",
-            reply_markup=buttons,
-        )
+       
     else:
         stream = AudioPiped(file_path, audio_parameters=HighQualityAudio())
         try:
